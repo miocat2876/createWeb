@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/summernote-lite.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/summernote-lite.js"></script>
+    <script src="../js/summernote-ko-KR.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            //여기 아래 부분
+            $('#summernote').summernote({
+                height: 300,                 // 에디터 높이
+                minHeight: null,             // 최소 높이
+                maxHeight: null,             // 최대 높이
+                focus: true,                  // 에디터 로딩후 포커스를 맞출지 여부
+                lang: "ko-KR",					// 한글 설정
+                placeholder: '최대 2048자까지 쓸 수 있습니다'	//placeholder 설정
+                
+            });
+    });
+    </script>
+</head>
+<body>
+
+    <div class="wrap">
+
+        <!-- <div class="side-wrap">
+            <div class="side-bar">
+                <ul>
+                    <li>1test</li>
+                    <li>2test</li>
+                    <li>3test</li>
+                </ul>
+            </div>
+        </div> -->
+
+        <div class="main-wrap">
+            <div class="search-wrap clear">
+                <div class="input-wrap clear">
+                    <div class="select-wrap">
+                        <select name="" id="">
+                            <option value="">1test</option>
+                            <option value="">2test</option>
+                            <option value="">3test</option>
+                        </select>
+                    </div>
+                    <div class="text-wrap">
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="icon-wrap">
+                    <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-wrap">
+                <div class="content-wrap clear">
+                    <div class="tag"><p>tag</p></div>
+                    <div class="title"><p>title<p></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
