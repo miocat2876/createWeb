@@ -1,75 +1,186 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/summernote-lite.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../js/summernote-lite.js"></script>
-    <script src="../js/summernote-ko-KR.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            //여기 아래 부분
-            $('#summernote').summernote({
-                height: 300,                 // 에디터 높이
-                minHeight: null,             // 최소 높이
-                maxHeight: null,             // 최대 높이
-                focus: true,                  // 에디터 로딩후 포커스를 맞출지 여부
-                lang: "ko-KR",					// 한글 설정
-                placeholder: '최대 2048자까지 쓸 수 있습니다'	//placeholder 설정
-                
-            });
-    });
-    </script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
 </head>
 <body>
 
-    <div class="wrap">
+    <div class="wrapper">
+        <div class="header-wrapper">
 
-        <!-- <div class="side-wrap">
-            <div class="side-bar">
-                <ul>
-                    <li>1test</li>
-                    <li>2test</li>
-                    <li>3test</li>
+            <div class="header-wrap clear">
+                <div class="logo-wrap">
+                    <h1>TEST</h1>
+                    <div class="search">
+                        <fieldset>
+                            <i class="fas fa-search"></i>
+                        </fieldset>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-ch-list">
+                        <div class="list-icon">
+                            <ul>
+                                <li><i class="far fa-bell"></i></li>
+                                <li><i class="far fa-envelope"></i></li>
+                                <li><i class="fas fa-gift"></i></li>
+                            </ul>
+                        </div>
+                        <div class="list-icon2 clear">
+                            <h4>jun 30 2021</h4>
+                            <ul>
+                                <li><i class="fas fa-angle-down"></i></li>
+                                <li><i class="far fa-user"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+           
+        </div>
+        <div class="sidebar-wrap">
+
+            <div class="menu-list-wrap">
+                <ul class="menu-list">
+                    <li><p></p><i class="fas fa-desktop"></i></li>
+                    <li><p></p><i class="fas fa-desktop"></i></li>
+                    <li><p></p><i class="fas fa-desktop"></i></li>
+                    <li><p></p><i class="fas fa-desktop"></i></li>
+                    <li><p></p><i class="fas fa-desktop"></i></li>
+                    <li><p></p><i class="fas fa-desktop"></i></li>
                 </ul>
             </div>
-        </div> -->
-
-        <div class="main-wrap">
-            <div class="search-wrap clear">
-                <div class="input-wrap clear">
-                    <div class="select-wrap">
-                        <select name="" id="">
-                            <option value="">1test</option>
-                            <option value="">2test</option>
-                            <option value="">3test</option>
-                        </select>
-                    </div>
-                    <div class="text-wrap">
-                        <input type="text" name="" id="">
-                    </div>
-                    <div class="icon-wrap">
-                    <i class="fas fa-search"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="list-wrap">
-                <div class="content-wrap clear">
-                    <div class="tag"><p>tag</p></div>
-                    <div class="title"><p>title<p></div>
-                </div>
-            </div>
-
         </div>
+
+        <div class="main-wrapper">
+
+            <div class="main-wrap clear">
+                <div class="main-header clear">
+
+                    <h1 class="main-logo">
+                        TEST
+                    </h1>
+
+                    <div class="main-serach">
+                        <label for="serach-select">선택: </label>
+                        <select id="serach-select">
+                            <option value="">test</option>
+                            <option value="">test</option>
+                        </select>
+                        <label for="serach-input">입력: </label>
+                        <input type="text" name="" id="serach-input">
+                    </div>
+
+                </div>
+
+                <div class="main-content-wrap">
+
+                    <div class="main-content clear">
+
+                        <div class="main-list-wrap">
+
+                            <div class="table-list">
+                                <table>
+                                    <th>TITLE <i class="fas fa-angle-down"></i></th>
+                                    <th>TYPE <i class="fas fa-angle-down"></i></th>
+                                    <th>CODE <i class="fas fa-angle-down"></i></th>
+                                    <th>DATE <i class="fas fa-angle-down"></i></th>
+                                    <tr class="clear">
+                                        <td><span class="span-red"></span> 
+                                            <div class="text">
+                                                <p>test</p>
+                                                <i class="far fa-copy"></i>
+                                            </div>
+                                            </td>
+                                        <td><p>test</p></td>
+                                        <td>
+                                            <div class="box">
+                                                404
+                                            </div>
+                                        </td>
+                                        <td>2021.11.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>123</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>2021.11.12</td>
+                                    </tr>
+                                </table>
+                                
+                            </div>
+
+                            <div class="list-icon">
+                                <i class="fas fa-arrow-circle-down"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="main-contet-wrapper">
+
+                            <div class="main-contet-wrap">
+
+                                <div class="content-header clear">
+
+                                    <div class="header">
+                                        hi
+                                    </div>
+        
+                                    <div class="content">
+                                        asd
+                                    </div>
+        
+                                    <div class="date">
+                                        2021.11.12
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-contet-input-wrap">
+                                <div class="header">
+    TEST4
+                                </div>
+                                <div class="content">
+    etset
+                                </div>
+                                <div class="date">
+                                    2021.11.12
+                                </div>
+                                
+
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="input-wrap clear">
+                    <i class="fas fa-plus-circle"></i>
+
+                    <div class="input-box">
+                        <input type="text" name="" id="">
+                        <button>send</button>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+
+
 
     </div>
     
